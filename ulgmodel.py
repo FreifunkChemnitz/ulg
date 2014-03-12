@@ -60,7 +60,7 @@ def import_config():
     return module
 
 def annotateAS(asn):
-    return asn+' | '+whois.lookup_as_name(asn)
+    return asn
 
 
 class PersistentStorage(object):

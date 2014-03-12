@@ -460,7 +460,7 @@ class BirdRouter(ulgmodel.Router):
 
 
 class BirdRouterLocal(ulgmodel.LocalRouter,BirdRouter):
-    def __init__(self,sock=defaults.default_bird_sock,commands=None,proto_fltr=None,asn='My ASN',name='localhost'):
+    def __init__(self,sock=defaults.default_bird_sock,commands=None,proto_fltr=None,asn='bequerel',name='localhost'):
         ulgmodel.LocalRouter.__init__(self)
         BirdRouter.__init__(self)
 

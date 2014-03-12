@@ -46,17 +46,4 @@ def lookup(key):
     return res
 
 def lookup_as_name(asn):
-    if asn in asname_cache:
-        return asname_cache[asn]
-
-    os.environ['PYTHONIOENCODING'] = 'utf-8'
-    s = subprocess.Popen([defaults.bin_whois, '-H', asn],
-                         stdout=subprocess.PIPE)
-
-    for l in s.stdout.readlines():
-        m = asname_regex.match(l)
-        if(m):
-            asname_cache[asn] = m.group(2)
-            return m.group(2).decode('utf-8')
-
-    return defaults.STRING_UNKNOWN
+    return defaults.STRING_EMPTY

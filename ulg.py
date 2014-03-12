@@ -326,10 +326,10 @@ class DecoratorHelper:
 
     def decorateASN(self,asn,prefix="AS"):
         asn = re.sub('[Aa][Ss][Nn]?([0-9]+)','\\1',asn)
-        return self.mwin(self.getWhoisURL('AS'+str(asn),'AS'),prefix+str(asn))
+        return 'AS'+str(asn)
 
     def decoratePrefix(self,ip):
-        return self.mwin(self.getWhoisURL(ip,'IP'),ip)
+        return ip
 
     def annotatePrefixes4(self,line):
         s=0

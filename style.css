@@ -134,15 +134,15 @@ p {
 /* example of icons in sellectors. (changes the size of the field) */
 
 .form select#routerselect option[value="2"]:before {
-//    content: url("http://icons.iconarchive.com/icons/jeanette-foshee/simpsons-08/16/Marge-O-Rama-Officer-Marge-Simpson-2-icon.png");
+    content: url("http://icons.iconarchive.com/icons/jeanette-foshee/simpsons-08/16/Marge-O-Rama-Officer-Marge-Simpson-2-icon.png");
 } 
 
 .form select#routerselect option[value="1"]:before {
-//    content: url("http://icons.iconarchive.com/icons/jeanette-foshee/simpsons-02/16/Folder-Homer-icon.png");
+    content: url("http://icons.iconarchive.com/icons/jeanette-foshee/simpsons-02/16/Folder-Homer-icon.png");
 }
 
 .form select#routerselect option[value="0"]:before {
-//    content: url("http://icons.iconarchive.com/icons/jeanette-foshee/simpsons-09/16/Lisas-Wedding-Older-Marge-icon.png")
+    content: url("http://icons.iconarchive.com/icons/jeanette-foshee/simpsons-09/16/Lisas-Wedding-Older-Marge-icon.png")
 }
 
 .form br
